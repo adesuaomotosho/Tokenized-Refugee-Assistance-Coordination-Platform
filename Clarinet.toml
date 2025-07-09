@@ -1,0 +1,24 @@
+[project]
+name = 'Tokenized-Refugee-Assistance-Coordination-Platform'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.resettlement-matching]
+path = 'contracts/resettlement-matching.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.resource-allocation]
+path = 'contracts/resource-allocation.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
